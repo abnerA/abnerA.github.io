@@ -239,6 +239,11 @@ nav .menu li .item:hover {
     height: 250px;
   }
 
+  .img1, .img2 {
+    width: 90%;
+    height: 400px;
+  }
+
   .header {
     background-image: url(../Img/tulipan11.jpg);
     background-repeat: no-repeat;
