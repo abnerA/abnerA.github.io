@@ -32,7 +32,7 @@ body {
   margin: 0px;
   font-family: "Dancing Script";
   font-size: 50px;
-  color: black;
+  color: rgb(78, 6, 78);
 }
 
 nav {
@@ -62,7 +62,7 @@ nav .menu li .item {
   font-size: 30px;
   margin: 5px;
   padding: 5px;
-  color: black;
+  color: rgb(78, 6, 78);
 }
 
 nav .menu li .item:hover {
@@ -167,11 +167,9 @@ nav .menu li .item:hover {
 /* MOBILE 576px*/
 @media (max-width: 768px) {
   nav {
-    background-color: grey;
     border-radius: 4px;
     width: 60%;
     display: inline-block;
-    width: 50%;
   }
 
   .menu {
@@ -266,11 +264,9 @@ nav .menu li .item:hover {
 
 @media (max-width: 576px) {
   nav {
-    background-color: grey;
     border-radius: 4px;
     width: 60%;
     display: inline-block;
-    width: 50%;
   }
 
   .menu {
@@ -340,6 +336,12 @@ nav .menu li .item:hover {
     height: 250px;
   }
 
+  .img1, .img2 {
+    width: 90%;
+    margin: 0 auto;
+    height: 250px;
+  }
+
   .header {
     background-image: url(../Img/tulipan11.jpg);
     background-repeat: no-repeat;
@@ -348,6 +350,113 @@ nav .menu li .item:hover {
     border-radius: 3px;
     width: 100%;
     height: 210px;
+    overflow: hidden;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    opacity: 80%;
+  }
+
+  .end {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 330px) {
+  nav {
+    border-radius: 4px;
+    width: 60%;
+    display: inline-block;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 34px 0% 40px 5%;
+    background-color:white;
+    position: fixed;
+    width: 40%;
+    padding: 0px;
+    opacity: 70%;
+    border-radius: 4px;
+    left: 100%;
+    transition: left 0.8s;
+  }
+
+  nav .menu li {
+    margin: 0px;
+    padding: 5px;
+    display: block;
+  }
+
+  nav .menu li .item {
+    font-size: 20px;
+  }
+  
+  nav .menu li .item:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .nav-toggle {
+    font-size: 25px;
+    color: purple;
+    position: fixed;
+    display: block;
+    left: 80%;
+  }
+
+  .menu_visible {
+    left: 60%;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+
+  .header .titulo .home .logo {
+    font-size: 30px;
+  }
+
+  .parr {
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .name {
+    font-size: 24px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 10px;
+  }
+
+  .img {
+    width: 90%;
+    height: 180px;
+  }
+
+  .img1, .img2 {
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+  }
+
+  .header {
+    background-image: url(../Img/tulipan11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    width: 100%;
+    height: 132px;
     overflow: hidden;
   }
   .footer {
