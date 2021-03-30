@@ -172,7 +172,7 @@ nav .menu li .item:hover {
     position: fixed;
     width: 40%;
     padding: 0px;
-    opacity: 70%;
+    opacity: 0.7;
     border-radius: 4px;
     left: 100%;
     transition: left 0.8s;
@@ -226,7 +226,7 @@ nav .menu li .item:hover {
     align-items: center;
     width: 95%;
     margin: 0 auto;
-    opacity: 80%;
+    opacity: 0.8;
   }
 
   .end {
