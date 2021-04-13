@@ -3,54 +3,77 @@
   src: url("../fonts/DancingScript-Bold.ttf");
 }
 
+/*Variables para cambiar los colores*/
+:root {
+  --fondo: whitesmoke;
+  --title: purple;
+  --subTitulo: purple;
+  --parr: black;
+  --footer: rgb(221, 175, 248);
+}
+
 body {
-  background-color: whitesmoke;
-  width: 100%;
+  background-color: var(--fondo);
   max-width: 1000px;
   margin: 0 auto;
   font-family: "Dancing Script";
 }
 
+/*HEADER*/
 .header {
-  background-image: url(../Img/tulipan11.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 3px;
   width: 100%;
-  height: 400px;
-  overflow: hidden;
+  height: 460px;
 }
 
-.header .titulo {
-  width: 20%;
+.header .banner {
+  background-color: var(--fondo);
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+
+.header .banner .titulo {
+  width: 150px;
   height: 60px;
   display: inline-block;
+  position: relative;
 }
 
-.header .titulo .home {
+.header .banner .titulo .home {
   text-decoration: none;
 }
 
-.header .titulo .home .logo {
+.header .banner .titulo .home .logo {
   margin: 0px;
   font-size: 50px;
-  color: rgb(78, 6, 78);
+  color: var(--title);
 }
 
 nav {
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  width: 60%;
+  position: relative;
+  width: 50%;
+  height: 60px;
   float: right;
+}
+
+/* TOGGLE */
+.nav-toggle {
+  color: var(--title);
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  margin-top: 14px;
 }
 
 .menu {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding-top: 16px;
+  padding: 0;
 }
 
 nav .menu li {
@@ -64,22 +87,200 @@ nav .menu li .item {
   font-size: 30px;
   margin: 5px;
   padding: 5px;
-  color: rgb(78, 6, 78);
+  color: var(--title);
 }
 
 nav .menu li .item:hover {
   text-decoration: underline;
 }
 
+.header .carousel {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.carousel .cb-slideshow {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header .carousel .cb-slideshow li {
+  list-style: none;
+}
+
+/*Carousel*/
+.carousel .cb-slideshow li span {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  color: transparent;
+  opacity: 0;
+  border-radius: 5px;
+  -webkit-animation: imageAnimation 36s linear infinite 0s;
+  -moz-animation: imageAnimation 36s linear infinite 0s;
+  -o-animation: imageAnimation 36s linear infinite 0s;
+  -ms-animation: imageAnimation 36s linear infinite 0s;
+  animation: imageAnimation 36s linear infinite 0s;
+}
+
+/*Imagenes del Carousel*/
+.cb-slideshow li:nth-child(1) span {
+  background-image: url(../Img/tulipan1.jpg);
+}
+.cb-slideshow li:nth-child(2) span {
+  background-image: url(../Img/tulipan2.jpg);
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+  background-image: url(../Img/tulipan3.jpg);
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+  background-image: url(../Img/tulipan4.jpg);
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -ms-animation-delay: 18s;
+  animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+  background-image: url(../Img/tulipan5.jpg);
+  -webkit-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  -o-animation-delay: 24s;
+  -ms-animation-delay: 24s;
+  animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+  background-image: url(../Img/tulipan6.jpg);
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  animation-delay: 30s;
+}
+
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -moz-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -moz-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -o-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -o-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -ms-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -ms-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*Parte del main*/
 .main {
-  background: whitesmoke;
   width: 100%;
   overflow: hidden;
 }
 
 .history,
 .cultivo,
-.acerca-de {
+.acerca_de {
   width: 100%;
 }
 
@@ -89,7 +290,7 @@ nav .menu li .item:hover {
   margin: 0 auto;
   margin-top: 20px;
   font-weight: bold;
-  color: purple;
+  color: var(--subTitulo);
 }
 
 .parr {
@@ -99,19 +300,19 @@ nav .menu li .item:hover {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: black;
+  color: var(--parr);
 }
 
 .img {
-  background-image: url("../Img/tulipan6.jpg");
+  background-image: url("../Img/tulipan7.jpg");
 }
 
 .img1 {
-  background-image: url("../Img/tulipan12.jpg");
+  background-image: url("../Img/tulipan8.jpg");
 }
 
 .img2 {
-  background-image: url("../Img/tulipan13.jpg");
+  background-image: url("../Img/tulipan9.jpg");
 }
 
 .img,
@@ -119,16 +320,16 @@ nav .menu li .item:hover {
 .img2 {
   background-size: cover;
   background-position: center;
-  border-radius: 4px;
-  width: 80%;
+  border-radius: 5px;
+  width: 90%;
   margin: 0 auto;
   height: 500px;
 }
 
 .footer {
-  background: grey;
+  background: var(--footer);
   border-radius: 4px;
-  width: 70%;
+  width: 90%;
   height: 40px;
   margin: 0 auto;
 }
@@ -139,43 +340,41 @@ nav .menu li .item:hover {
   text-align: center;
   width: 100%;
   padding: 10px;
-  color: black;
+  color: var(--parr);
 }
 
-/* TOGGLE */
-
-.nav-toggle {
-  color: white;
-  background: none;
-  border: none;
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-  margin-top: 5px;
-}
-
-/* MOBILE 576px*/
+/* MOBILE 768px*/
 @media (max-width: 768px) {
   .header {
-    height: 212px;
+    height: 272px;
   }
 
   nav {
-    border-radius: 4px;
     display: inline-block;
+    width: 40%;
+  }
+
+  /* TOGGLE */
+  .nav-toggle {
+    position: fixed;
+    display: block;
+    left: 90%;
+    z-index: 2;
   }
 
   .menu {
     flex-direction: column;
-    margin: 37px 0% 40px 5%;
+    margin: 60px 0% 40px 5%;
     background-color: white;
     position: fixed;
     width: 40%;
-    padding: 0px;
-    opacity: 0.7;
-    border-radius: 4px;
+    height: 198px;
+    padding-top: 15px;
+    opacity: 80%;
+    border-radius: 10px;
     left: 100%;
     transition: left 0.8s;
+    z-index: 2;
   }
 
   nav .menu li {
@@ -187,19 +386,22 @@ nav .menu li .item:hover {
     font-size: 25px;
   }
 
-  .nav-toggle {
-    color: purple;
-    position: fixed;
-    display: block;
-    left: 90%;
-  }
-
   .menu_visible {
     left: 60%;
   }
 
   .nav-toggle:focus:not(:focus-visible) {
     outline: none;
+  }
+
+  .header .carousel {
+    height: 212px;
+    z-index: 1;
+  }
+
+  .carousel .cb-slideshow li span {
+    width: 100%;
+    height: 212px;
   }
 
   .name {
@@ -217,16 +419,14 @@ nav .menu li .item:hover {
   .img,
   .img1,
   .img2 {
-    width: 90%;
-    height: 400px;
+    height: 300px;
   }
 
   .footer {
     display: flex;
     align-items: center;
     width: 95%;
-    margin: 0 auto;
-    opacity: 0.8;
+    opacity: 80%;
   }
 
   .end {
@@ -234,61 +434,76 @@ nav .menu li .item:hover {
   }
 }
 
+/* MOBILE 576px*/
 @media (max-width: 576px) {
-  .header {
-    height: 210px;
-  }
-
-  .header .titulo .home .logo {
-    font-size: 40px;
-  }
-
   nav {
-    border-radius: 4px;
-    display: inline-block;
+    width: 30%;
   }
 
   .nav-toggle {
-    left: 85%;
+    left: 87%;
   }
 
   .img,
   .img1,
   .img2 {
-    width: 90%;
     height: 250px;
+  }
+
+  .end {
+    font-size: 12px;
   }
 }
 
+/* MOBILE 330px*/
 @media (max-width: 330px) {
   .header {
+    height: 182px;
+  }
+
+  .header .banner {
+    height: 50px;
+  }
+
+  .header .banner .titulo {
+    height: 50px;
+  }
+
+  .header .carousel {
     height: 132px;
   }
 
-  .header .titulo .home .logo {
-    font-size: 30px;
+  .carousel .cb-slideshow li span {
+    height: 132px;
+  }
+
+  .nav-toggle {
+    left: 78%;
+    margin: 10px;
+  }
+
+  .header .banner .titulo .home .logo {
+    font-size: 40px;
+  }
+
+  nav {
+    width: 30%;
+    border-radius: 4px;
+    height: 50px;
   }
 
   .menu {
-    margin: 34px 0% 40px 5%;
+    margin: 50px 0% 40px 5%;
+    height: 128px;
+    padding-top: 5px;
   }
 
   nav .menu li {
-    margin: 0px;
     padding: 5px;
   }
 
   nav .menu li .item {
     font-size: 20px;
-  }
-
-  .nav-toggle {
-    font-size: 25px;
-    left: 80%;
-  }
-
-  .menu_visible {
-    left: 60%;
   }
 
   .name {
@@ -305,11 +520,6 @@ nav .menu li .item:hover {
   .img,
   .img1,
   .img2 {
-    width: 90%;
     height: 200px;
-  }
-
-  .end {
-    font-size: 12px;
   }
 }

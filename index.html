@@ -6,31 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Origen e historia de los Tulipanes">
-    <title>Tulipán Amarillos y morados</title>
+    <title>Historia del Tulipán</title>
     <link rel="shortcut icon" type="imagen/x-icon" href="Img/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="./src/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <link rel="stylesheet" href="./src/normalize.css">
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script defer src="./src/app.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <div class="titulo">
-            <a href="#" class="home">
-                <h2 class="logo" title="Página de inicio de Tulipán">Tulipán</h2>
-            </a>
+        <div class="banner">
+            <div class="titulo">
+                <a href="#" class="home">
+                    <h2 class="logo" title="Página de inicio de Tulipán">Tulipán</h2>
+                </a>
+            </div>
+            <nav>
+                <button class="nav-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="menu">
+                    <li><a class="item" href="#historia">Historia</a></li>
+                    <li><a class="item" href="#cultivo">Cultivo</a></li>
+                    <li><a class="item" href="#acerca-de">Acerca de</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <button class="nav-toggle" aria-label="Abrir Menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="menu">
-                <li><a class="item" href="#historia">Historia</a></li>
-                <li><a class="item" href="#cultivo">Cultivo</a></li>
-                <li><a class="item" href="#acerca-de">Acerca de</a></li>
+        <div class="carousel">
+            <ul class="cb-slideshow">
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main class="main">
 
@@ -61,11 +73,11 @@
 
         <article class="cultivo">
             <h2 class="name" id="cultivo">Cultivo</h2>
-            <p class="parr">Si quieres aprender como sembrar tulipanes ponte como y presta mucha atención porque a
-                continuación te mostramos con lujo de detalle como planta tu propio tulipán.</p>
+            <p class="parr">Si quieres aprender como sembrar tulipanes ponte cómodo y presta mucha atención porque a
+                continuación te mostramos con lujo de detalle como plantar tu propio tulipán.</p>
 
             <p class="parr">Lo primero que hay que hacer es esperar el otoño ya que este es el momento más adecuado para
-                cultivar los tulipanes. Desde luego es una muy mala idea planta los tulipanes en otro momento que no sea
+                cultivar los tulipanes. Desde luego es una muy mala idea plantar los tulipanes en otro momento que no sea
                 la llegada del otoño ya que el bulbo puede crecer en mal momento y morirse por las heladas.</p>
 
             <p class="parr">Luego seleccionaremos los bulbos puedes encontrarlos fácilmente en algún vivero o tienda
@@ -80,7 +92,7 @@
                 demasiado seco.</p>
 
             <p class="parr">Cuando ya tengamos el sitio indicado para plantar los tulipanes empezaremos por hacer un
-                hoyo en el suelo de unos 20 cm entre el lugar que vas poner el bulbo y la superficie. Recuerda que cada
+                hoyo en el suelo de unos 20 cm entre el lugar que vas a poner el bulbo y la superficie. Recuerda que cada
                 bulbo tendrá que tener su propio agujero individual y que si lo vas a plantar cerca o en una fila
                 deberás dejar un espacio de al menos 5 cm.</p>
 
@@ -93,7 +105,7 @@
                 hermosas flores. ¡Esperamos que te sirva!</p>
         </article>
 
-        <article class="acerca-de">
+        <article class="acerca_de">
             <h2 class="name" id="acerca-de">Acerca de</h2>
             <p class="parr">1-Hubo un momento en el que el tulipán llego a ser la flor mas costosa del mundo. Llegando a
                 acostar hasta más de 10 veces lo que podía ganar un trabajador promedio.</p>
