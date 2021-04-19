@@ -19,6 +19,37 @@ body {
   font-family: "Dancing Script";
 }
 
+/* Style Scroll */
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--footer);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--title);
+  box-shadow:  0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: var(--title);
+}
+
+body::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
 /*HEADER*/
 .header {
   width: 100%;
