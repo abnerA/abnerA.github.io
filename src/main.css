@@ -1,0 +1,102 @@
+/*Parte del main*/
+.main {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .history {
+    display: grid;
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "h2 h2"
+    "parr1 parr1"
+    "img parr2"
+    "parr3 parr3"
+    "parr4 parr4";
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  section h2 {
+    grid-area: h2;
+  }
+  
+  section .parr-1 {
+    grid-area: parr1;
+    font-size: 28px;
+  }
+  
+  section .parr-2 {
+    grid-area: parr2;
+    font-size: 28px;
+    margin-top: 0;
+    align-self: center;
+  }
+  
+  section .img {
+    grid-area: img;
+    width: 100%;
+    height: 500px;
+  }
+  
+  section .parr-3 {
+    grid-area: parr3;
+    font-size: 28px;
+  }
+  
+  section .parr-4 {
+    grid-area: parr4;
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  
+  .tulip7 {
+    width: 90%;
+    height: 500px;
+    border-radius: 5px;
+  }
+  
+  .history,
+  .cultivo,
+  .acerca_de {
+    width: 100%;
+  }
+  
+  .name {
+    font-size: 35px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--subTitulo);
+  }
+  
+  .parr {
+    text-align: justify;
+    font-size: 28px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--parr);
+  }
+  /*
+  .img {
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+  }
+  
+  .tulip7, .tulip8 {
+    border-radius: 5px;
+    width: 50%;
+    height: 500px;
+  }
+  
+  .tulip9 {
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+  }
+  */
