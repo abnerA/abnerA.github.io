@@ -14,40 +14,18 @@
 
 body {
   background-color: var(--fondo);
-  max-width: 1000px;
-  margin: 0 auto;
   font-family: "Dancing Script";
 }
 
-/* Style Scroll */
-
-body::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: var(--footer);
-  border-radius: 4px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background: var(--title);
-  box-shadow:  0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-body::-webkit-scrollbar-thumb:active {
-  background-color: var(--title);
-}
-
-body::-webkit-scrollbar-track {
-  background: #e1e1e1;
-  border-radius: 4px;
-}
-
-body::-webkit-scrollbar-track:hover,
-body::-webkit-scrollbar-track:active {
-  background: #d4d4d4;
+.container {
+  display: grid;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "header"
+  "main"
+  "footer";
+  grid-template-columns: 100%;
 }
 
 /*HEADER*/
@@ -309,6 +287,59 @@ nav .menu li .item:hover {
   overflow: hidden;
 }
 
+.history {
+  display: grid;
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "h2 h2"
+  "parr1 parr1"
+  "img parr2"
+  "parr3 parr3"
+  "parr4 parr4";
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+section h2 {
+  grid-area: h2;
+}
+
+section .parr-1 {
+  grid-area: parr1;
+  font-size: 28px;
+}
+
+section .parr-2 {
+  grid-area: parr2;
+  font-size: 28px;
+  margin-top: 0;
+  align-self: center;
+}
+
+section .img {
+  grid-area: img;
+  width: 100%;
+  height: 500px;
+}
+
+section .parr-3 {
+  grid-area: parr3;
+  font-size: 28px;
+}
+
+section .parr-4 {
+  grid-area: parr4;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.tulip7 {
+  width: 90%;
+  height: 500px;
+  border-radius: 5px;
+}
+
 .history,
 .cultivo,
 .acerca_de {
@@ -333,7 +364,7 @@ nav .menu li .item:hover {
   margin-bottom: 20px;
   color: var(--parr);
 }
-
+/*
 .img {
   width: 90%;
   margin: 0 auto;
@@ -351,7 +382,7 @@ nav .menu li .item:hover {
   width: 100%;
   height: 500px;
 }
-
+*/
 .footer {
   background: var(--footer);
   border-radius: 4px;
