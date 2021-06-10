@@ -335,25 +335,20 @@ nav .menu li .item:hover {
 }
 
 .img {
-  background-image: url("../Img/tulipan7.jpg");
-}
-
-.img1 {
-  background-image: url("../Img/tulipan8.jpg");
-}
-
-.img2 {
-  background-image: url("../Img/tulipan9.jpg");
-}
-
-.img,
-.img1,
-.img2 {
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
   width: 90%;
   margin: 0 auto;
+  height: 500px;
+}
+
+.tulip7, .tulip8 {
+  border-radius: 5px;
+  width: 50%;
+  height: 500px;
+}
+
+.tulip9 {
+  border-radius: 5px;
+  width: 100%;
   height: 500px;
 }
 
