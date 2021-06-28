@@ -1,87 +1,208 @@
 /*Parte del main*/
 .main {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .history {
-    display: grid;
-    max-width: 90%;
-    position: relative;
-    margin: auto;
-    grid-template-areas: "h2 h2"
+  width: 100%;
+  overflow: hidden;
+}
+
+/*Section Historia*/
+.history {
+  display: grid;
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  grid-template-areas:
+    "h2 h2"
     "parr1 parr1"
     "img parr2"
     "parr3 parr3"
     "parr4 parr4";
-    grid-template-rows: 100%;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  section h2 {
-    grid-area: h2;
-  }
-  
-  section .parr-1 {
-    grid-area: parr1;
-    font-size: 28px;
-  }
-  
-  section .parr-2 {
-    grid-area: parr2;
-    font-size: 28px;
-    margin-top: 0;
-    align-self: center;
-  }
-  
-  section .img {
-    grid-area: img;
-    width: 100%;
-    height: 500px;
-  }
-  
-  section .parr-3 {
-    grid-area: parr3;
-    font-size: 28px;
-  }
-  
-  section .parr-4 {
-    grid-area: parr4;
-    font-size: 28px;
-    margin-top: 10px;
-  }
-  
-  .tulip7 {
-    width: 90%;
-    height: 500px;
-    border-radius: 5px;
-  }
-  
-  .history,
-  .cultivo,
-  .acerca_de {
-    width: 100%;
-  }
-  
-  .name {
-    font-size: 35px;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-weight: bold;
-    color: var(--subTitulo);
-  }
-  
-  .parr {
-    text-align: justify;
-    font-size: 28px;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: var(--parr);
-  }
-  /*
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+section h2 {
+  grid-area: h2;
+}
+
+section .parr-1 {
+  grid-area: parr1;
+  font-size: 28px;
+}
+
+section .parr-2 {
+  grid-area: parr2;
+  font-size: 28px;
+  margin-top: 0;
+  align-self: center;
+}
+
+section .img {
+  grid-area: img;
+}
+
+section .parr-3 {
+  grid-area: parr3;
+  font-size: 28px;
+}
+
+section .parr-4 {
+  grid-area: parr4;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.tulip7, .tulip8 {
+  width: 90%;
+  height: 500px;
+  border-radius: 5px;
+}
+
+/*Section Cultivo*/
+
+.cultivo {
+  display: grid;
+  max-width: 90%;
+  margin: auto;
+  grid-template-areas: "h2 h2"
+  "parr-1 parr-1"
+  "parr-2 img"
+  "parr-3 parr-3"
+  "parr-4 parr-4"
+  "parr-5 parr-5"
+  "parr-6 parr-6"
+  "parr-7 parr-7";
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cultivo h2 {
+  grid-area: h2;
+}
+
+.cultivo .parr-1 {
+  grid-area: parr-1;
+  font-size: 28px;
+}
+
+.cultivo .parr-2 {
+  grid-area: parr-2;
+  font-size: 28px;
+  margin-top: 0;
+  align-self: center;
+}
+
+.cultivo .parr-3 {
+  grid-area: parr-3;
+  font-size: 28px;
+}
+
+.cultivo .parr-4 {
+  grid-area: parr-4;
+  font-size: 28px;
+}
+
+.cultivo .parr-5 {
+  grid-area: parr-5;
+  font-size: 28px;
+}
+
+.cultivo .parr-6 {
+  grid-area: parr-6;
+  font-size: 28px;
+}
+
+.cultivo .parr-7 {
+  grid-area: parr-7;
+  font-size: 28px;
+}
+
+.cultivo .img {
+  grid-area: img;
+  width: 100%;
+  height: 500px;
+}
+
+/*Section Acerca de*/
+
+.acerca_de {
+  display: grid;
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  grid-template-areas:
+  "h2 h2"
+  "parr-1 parr-1"
+  "parr-2 parr-2"
+  "parr-3 parr-3"
+  "img parr-4"
+  "parr-5 parr-5"
+  "parr-6 parr-6";
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.acerca_de h2 {
+  grid-area: h2;
+}
+
+.acerca_de .parr-1 {
+  grid-area: parr-1;
+  font-size: 28px;
+}
+
+.acerca_de .parr-2 {
+  grid-area: parr-2;
+  font-size: 28px;
+}
+
+.acerca_de .parr-3 {
+  grid-area: parr-3;
+  font-size: 28px;
+}
+
+.acerca_de .parr-4 {
+  grid-area: parr-4;
+  font-size: 28px;
+  margin-top: 0;
+  align-self: center;
+}
+
+.acerca_de .parr-5 {
+  grid-area: parr-5;
+  font-size: 28px;
+}
+
+.acerca_de .parr-6 {
+  grid-area: parr-6;
+  font-size: 28px;
+}
+
+.acerca_de img {
+  grid-area: img;
+  width: 90%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.name {
+  font-size: 35px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--subTitulo);
+}
+
+.parr {
+  text-align: justify;
+  font-size: 28px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--parr);
+}
+/*
   .img {
     width: 90%;
     margin: 0 auto;
