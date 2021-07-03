@@ -2,7 +2,6 @@
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
@@ -11,6 +10,11 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
   }
+
+  .modal-content{
+    position: relative;
+    top: 80px;
+  }
   
   .modalContainer .modal-content {
     background-color: #fefefe;
@@ -18,17 +22,18 @@
     padding: 20px;
     padding-top: 0;
     border: 1px solid lightgray;
-    width: 40%;
-    height: auto;
+    width: 60%;
+    height: 70%;
   }
   
-  .imagen {
+  .tulip7, .tulip8 {
       cursor: pointer;
   }
   
   .modalContainer .modal-content img {
       width: 100%;
       height: 95%;
+      border-radius: 5px;
   }
   
   .modalContainer .close {
@@ -36,7 +41,6 @@
     color: #aaaaaa;
     float: right;
     font-size: 28px;
-    font-weight: bold;
   }
   
   .modalContainer .close:hover,
