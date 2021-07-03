@@ -1,4 +1,8 @@
+
+
 /* MOBILE 768px*/
+
+/*
 @media (max-width: 768px) {
     .header {
       height: 272px;
@@ -8,8 +12,9 @@
       display: inline-block;
       width: 40%;
     }
-  
+  */
     /* TOGGLE */
+    /*
     .nav-toggle {
       position: fixed;
       display: block;
@@ -88,8 +93,9 @@
       font-size: 15px;
     }
   }
-  
+  */
   /* MOBILE 576px*/
+  /*
   @media (max-width: 576px) {
     nav {
       width: 30%;
@@ -109,8 +115,9 @@
       font-size: 12px;
     }
   }
-  
+  */
   /* MOBILE 330px*/
+  /*
   @media (max-width: 330px) {
     .header {
       height: 182px;
@@ -177,5 +184,6 @@
     .img2 {
       height: 200px;
     }
-  }
+  }*/
+  
   
