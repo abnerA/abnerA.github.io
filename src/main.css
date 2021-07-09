@@ -19,7 +19,6 @@ section {
   justify-content: space-between;
 }
 
-
 .div-parr-1-2 {
   width: 40%;
   align-self: flex-start;
@@ -66,7 +65,7 @@ section {
   align-self: flex-start;
 }
 
-.div-acerca-de-parr{
+.div-acerca-de-parr {
   width: 40%;
 }
 
@@ -92,50 +91,4 @@ section {
 .parr {
   font-size: 22px;
   color: var(--parr);
-}
-
-@media (max-width: 360px) {
-  .history {
-    justify-content: center;
-  }
-  .div-parr-1-2 {
-    width: 95%;
-  }
-  .parr {
-    font-size: 18px;
-  }
-  .div-img-tulip7 {
-    width: 95%;
-  }
-
-  .div-parr-3-4 {
-    width: 95%;
-  }
-
-  .tulip7, .tulip8, .tulip9 {
-    height: 300px;
-  }
-}
-
-@media (max-width: 414px) {
-  .history {
-    justify-content: center;
-  }
-  .parr-1-2 {
-    width: 95%;
-  }
-  .parr {
-    font-size: 18px;
-  }
-  .img-tulip7 {
-    width: 95%;
-  }
-
-  .parr-3-4 {
-    width: 95%;
-  }
-
-  .tulip7 {
-    height: 300px;
-  }
 }
